@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+header #logo {
+    width: 150px;
+    height: auto;
+}
+
+header #navigation {
+    width: 60%;
+}
+
+header #navigation ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header #navigation  li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+header #navigation li:hover {
+    color: #d21617;
+}
+
+#comments-container {
+    background-image: url('../img/banner-4.png');
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+}
+
+#comments-container .comments-header {
+    text-align: center;
+    margin: 20px 30px 0 30px
+}
+
+#comments-container .comments-header p {
+    font-weight: bold;
+}
+
+#comments-container .comments-header a {
+    color: #000;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+#comments-container .comments-header a:hover {
+    color: #fff;
+    transform: scale(1.02);
+}
+
+#comments-container .comments-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 30px;
+}
+
+#comments-container .comments-body .comments-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #fff;
+    background-color: #202124;
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    transition: .3s;
+}
+
+.comments-box:hover {
+    transform: scale(1.02);
+    box-shadow: -3px 3px 5px #000;
+}
+
+.comments-box .image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #202124;
+}
+
+.image .users {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+}
+
+.image .user-1 {
+    background-image: url('../img/comentarios/user-1.png');
+}
+.image .user-2 {
+    background-image: url('../img/comentarios/user-2.png');
+}
+.image .user-3 {
+    background-image: url('../img/comentarios/user-3.png');
+}
+.image .user-4 {
+    background-image: url('../img/comentarios/user-4.png');
+}
+.image .user-5 {
+    background-image: url('../img/comentarios/user-5.png');
+}
+.image .user-6 {
+    background-image: url('../img/comentarios/user-6.png');
+}
+.image .user-7 {
+    background-image: url('../img/comentarios/user-7.png');
+}
+.image .user-8 {
+    background-image: url('../img/comentarios/user-8.png');
+}
+.image .user-9 {
+    background-image: url('../img/comentarios/user-9.png');
+}
+
+.comments-box .comment {
+    height: 100px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    color: #b5b9be;
+}
+
+footer {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1a1a1a;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer #footer-navigation {
+    display: none;
+    width: 90%;
+    background-color: #1a1a1a;
+}
+
+footer #footer-navigation .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------------------------------------------------------------- */
+/* Media Queries */
+/* ---------------------------------------------------------------- */
+@media(max-width: 768px) {
+    nav {
+        display: none;
+    }
+    
+    #comments-container .comments-body {
+        padding: 30px;
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        height: 110px;
+    }
+    
+    footer #footer-navigation {
+        display: block;
+    }
+    
+    li {
+        color: #d21617;
+    }
+}
+
+@media(max-width:480px) {
+    header {
+        height: 60px;
+    }
+    
+    footer {
+        height: 130px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+
+    footer #footer-navigation .footer-list {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    footer #footer-navigation .footer-list li {
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 320px) {
+    #banner {
+        background-image: url('./img/banner-320px.png');
+        background-position: 69%;
+    }
+
+    #actor-cards-container .cards-content .card {
+        padding: 0 0 20px 0;
+    }
+
+    #actor-cards-container .cards-content .banner-1{
+        background-position-x: 55%;
+    }
+
+    #form-container #contact-form {
+        width: 280px;
+    }
+
+    #form-container #contact-form h1 {
+        font-size: 14px;
+        padding: 0;
+    } 
+
+    #form-container #contact-form label span {
+        display: flex;
+        font-size: 12px;
+    }
+
+    #form-container #contact-form label .input-text {
+        width: 250px;
+        padding: 0 0 0 5px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    #form-container #contact-form .button {
+        left: 160px;
+    }
+
+
+    #galeria-container .header-container h1 {
+        font-size: 26px;
+    }
+
+    #galeria-container .header-container p {
+        font-size: 12px;
+    }
+
+    #galeria-container .images-container .actor-description h3 {
+        font-size: 14px;
+    }
+
+    #galeria-container .images-container .actor-description p {
+        font-size: 12px;
+    }
+}

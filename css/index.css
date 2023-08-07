@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+header #logo {
+    width: 150px;
+    height: auto;
+}
+
+header #navigation {
+    width: 60%;
+}
+
+header #navigation ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header #navigation  li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+header #navigation li:hover {
+    color: #d21617;
+}
+
+#banner {
+    background-image: url('../img/banner-1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    background-color: #000;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#trailer-container .content {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#trailer-container .content .trailer {
+    width: 50%;
+}
+
+#trailer-container .content .sinopse {
+    width: 50%;
+    height: 372px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+#trailer-container .content .sinopse .description {
+    color: #fff;
+    font-size: 19px;
+    width: 100%;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+#trailer-container .content .sinopse .button {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    background-color: #d21617;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+#trailer-container .content .sinopse .button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#actor-cards-container .cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+#actor-cards-container .cards-content .card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    align-items: center;
+}
+
+#actor-cards-container .cards-content .card:hover {
+    transform: scale(1.02);
+    box-shadow: -3px 3px 5px #d21617;
+}
+
+#actor-cards-container .cards-content .banner-1 {
+    background-image: url('../img/index/card-batman.jpeg');
+}
+
+#actor-cards-container .cards-content .banner-2 {
+    background-image: url('../img/index/card-mulher-gato.jpg');
+}
+
+#actor-cards-container .cards-content .banner-3 {
+    background-image: url('../img/index/card-gordon.jpg');
+}
+
+footer {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1a1a1a;
+    margin-top: 50px;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer #footer-navigation {
+    display: none;
+    width: 90%;
+    background-color: #1a1a1a;
+}
+
+footer #footer-navigation .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1240px) {
+    #banner {
+        background-position: 80%;
+    }
+}
+
+@media(max-width: 1024px) {
+    #banner {
+        background-position: 69%;
+    }
+
+    #trailer-container {
+        height: 410px;
+    }
+
+    #trailer-container .content .sinopse .description {
+        padding-top: 25px;
+    }
+}
+
+@media(max-width: 992px) {
+    #banner {
+        background-position: 69%;
+    }
+
+    #trailer-container {
+        height: 760px;
+    }
+
+    #trailer-container .content {
+        display: grid;
+    }
+
+    #trailer-container .content .trailer {
+        width: 100%;
+    }
+
+    #trailer-container .content .sinopse {
+        width: 100%;
+        padding-left: 0;
+        display: block;
+        height: 260px;
+    }
+
+    #trailer-container .content .sinopse .description {
+        padding-top: 0;
+    }
+
+    #trailer-container .content .sinopse .button {
+        margin-top: 20px;
+    }
+
+    footer {
+        height: 90px;
+    }
+
+    footer #footer-navigation {
+        display: none;
+    }
+
+    li {
+        color: #d21617;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 36%;
+    }
+
+    #trailer-container {
+        height: 676px;
+        margin-top: 0;
+        align-items: flex-start;
+    }
+
+    #trailer-container .content {
+        align-content: center;
+    }
+
+    #trailer-container .content .sinopse {
+        height: 205px;
+    }
+
+    #actor-cards-container .cards-content {
+        grid-template-columns: 1fr;
+    }
+
+    #actor-cards-container .cards-content .card {
+        padding: 0 0 20px 0;
+    }
+
+    #actor-cards-container .cards-content .banner-2 {
+        background-position-y: 0%;
+    }
+
+    footer {
+        height: 110px;
+    }
+
+    footer #footer-navigation {
+        display: block;
+    }
+}
+
+@media(max-width:480px) {
+    header {
+        height: 60px;
+    }
+    #banner {
+        background-position: 39%;
+    }
+
+    #trailer-container {
+        height: 442px;
+    }
+
+    #trailer-container .content .sinopse .description {
+        font-size: 12px;
+    }
+
+    #trailer-container .content .sinopse .button {
+        width: 150px;
+        height: 50px;
+        font-size: 11px;
+    }
+
+    #actor-cards-container .cards-content .card {
+        padding: 0 0 20px 0;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+
+    footer #footer-navigation .footer-list {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    footer #footer-navigation .footer-list li {
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 320px) {
+    #banner {
+        background-image: url('../img/banner-2.png');
+        background-position: 69%;
+    }
+
+    #actor-cards-container {
+        margin-top: 0;
+    }
+
+    #actor-cards-container .cards-content .card {
+        padding: 0 0 20px 0;
+    }
+
+    #actor-cards-container .cards-content .banner-1{
+        background-position-x: 55%;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}

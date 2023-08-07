@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+header #logo {
+    width: 150px;
+    height: auto;
+}
+
+header #navigation {
+    width: 60%;
+}
+
+header #navigation ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header #navigation  li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+header #navigation li:hover {
+    color: #d21617;
+}
+
+#galeria-container {
+    background-image: url('../img/banner-4.png');
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+#galeria-container .header-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#galeria-container .header-container h1 {
+    text-transform: uppercase;
+}
+
+#galeria-container .header-container p {
+    font-weight: bold;
+}
+
+#galeria-container .images-container {
+    display: grid;
+    width: 95%;
+    column-gap: 20px;
+    margin-top: 20px;
+    background-color: #404040;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+}
+
+#galeria-container .images-container .actor-description p {
+    text-align: justify;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+#galeria-container .images-container .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#galeria-container .images-container #last-images {
+    margin-bottom: 0;
+}
+
+#galeria-container .images-container .image {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+
+#galeria-container .images-container .image:hover {
+    transform: scale(1.02);
+    box-shadow: -3px 3px 5px #000;
+}
+
+#galeria-container .images-container .image-batman-1 {
+    background-image: url('../img/galeria/batman/batman-1.png');
+    background-position: 63%;
+}
+
+#galeria-container .images-container .image-batman-2 {
+    background-image: url('../img/galeria/batman/batman-2.png');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-batman-3 {
+    background-image: url('../img/galeria/batman/batman-3.png');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-mulher-gato-1 {
+    background-image: url('../img/galeria/mulher-gato/mulher-gato-1.jpg');
+    background-position: 20%;
+}
+
+#galeria-container .images-container .image-mulher-gato-2 {
+    background-image: url('../img/galeria/mulher-gato/mulher-gato-2.jpg');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-mulher-gato-3 {
+    background-image: url('../img/galeria/mulher-gato/mulher-gato-3.jpeg');
+    background-position: 68%;
+}
+
+#galeria-container .images-container .image-gordon-1 {
+    background-image: url('../img/galeria/gordon/gordon-1.jpg');
+    background-position: 50%;
+}
+#galeria-container .images-container .image-gordon-2 {
+    background-image: url('../img/galeria/gordon/gordon-2.jpg');
+    background-position: 40%;
+}
+#galeria-container .images-container .image-gordon-3 {
+    background-image: url('../img/galeria/gordon/gordon-3.png');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-pinguim-1 {
+    background-image: url('../img/galeria/pinguim/pinguim-1.png');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-pinguim-2 {
+   background-image: url('../img/galeria/pinguim/pinguim-2.png'); 
+   background-position: 55%;
+}
+
+#galeria-container .images-container .image-pinguim-3 {
+    background-image: url('../img/galeria/pinguim/pinguim-3.jpg');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-charada-1 {
+    background-image: url('../img/galeria/charada/charada-1.jpg');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-charada-2 {
+    background-image: url('../img/galeria/charada/charada-2.jpg');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-charada-3 {
+    background-image: url('../img/galeria/charada/charada-3.jpg');
+    background-position: 40%;
+}
+
+#galeria-container .images-container .image-alfred-1 {
+    background-image: url('../img/galeria/alfred/alfred-1.jpg');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-alfred-2 {
+    background-image: url('../img/galeria/alfred/alfred-2.png');
+    background-position: 50%;
+}
+
+#galeria-container .images-container .image-alfred-3 {
+    background-image: url('../img/galeria/alfred/alfred-3.png');
+    background-position: 75%;
+}
+
+footer {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1a1a1a;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer #footer-navigation {
+    display: none;
+    width: 90%;
+    background-color: #1a1a1a;
+}
+
+footer #footer-navigation .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1024px) {
+    #galeria-container .images-container .image-alfred-3 {
+        background-position: 70%;
+    }
+}
+
+@media(max-width: 992px) {
+    footer {
+        height: 90px;
+    }
+
+    footer #footer-navigation {
+        display: none;
+    }
+
+    li {
+        color: #d21617;
+    }
+}
+
+@media(max-width: 768px) {
+    #galeria-container {
+        padding: 0 20px 20px 20px;
+    }
+    
+    #galeria-container .images-container .images {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    
+    #galeria-container .images-container .image-gordon-3 {
+        background-position: 50% 0%;
+    }
+    
+    #galeria-container .images-container .image-pinguim-1 {
+        background-position: 50% 0;
+    }
+    
+    #galeria-container .images-container .image-pinguim-2 {
+        background-position: 50% 0;
+    }
+    
+    #galeria-container .images-container .image-charada-1 {
+        background-position: 50% 0%;
+    }
+    
+    #galeria-container .images-container .image-charada-2 {
+        background-position: 50% 0%;
+    }
+    
+    #galeria-container .images-container .image-alfred-2 {
+        background-position: 50% 0;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    footer {
+        height: 110px;
+    }
+    
+    footer #footer-navigation {
+        display: block;
+    }
+}
+
+@media(max-width:480px) {
+    header {
+        height: 60px;
+    }
+
+    #galeria-container .header-container h1 {
+        font-size: 26px;
+    }
+
+    #galeria-container .header-container p {
+        font-size: 12px;
+    }
+
+    #galeria-container .images-container .actor-description h3 {
+        font-size: 14px;
+    }
+
+    #galeria-container .images-container .actor-description p {
+        font-size: 12px;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+
+    footer #footer-navigation .footer-list {
+        display: grid;
+        justify-content: space-around;
+    }
+
+    footer #footer-navigation .footer-list li {
+        text-align: center;
+        font-size: 11px;
+    }
+
+}
+
+@media(max-width: 320px) {
+    #galeria-container .header-container h1 {
+        font-size: 26px;
+    }
+
+    #galeria-container .header-container p {
+        font-size: 12px;
+    }
+
+    #galeria-container .images-container .actor-description h3 {
+        font-size: 14px;
+    }
+
+    #galeria-container .images-container .actor-description p {
+        font-size: 12px;
+    }
+}
